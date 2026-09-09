@@ -1,0 +1,16 @@
+# Mídia gerada que o site não referencia. Fica no repositório (é material de
+# origem e o script pode voltar a usá-la), mas não sobe para a Vercel — são
+# ~44 MB de 69 MB da pasta public/, que hoje só engordam cada deploy.
+#
+# Referenciar de novo? Basta apagar a linha correspondente aqui.
+
+# Vídeo de chamada e seus quadros: nenhum componente aponta para eles.
+public/media/chamada-*
+
+# Larguras de 3840 px: lib/imagens.js declara o srcset até 3200.
+public/media/*-3840.avif
+public/media/*-3840.webp
+public/media/*-3840.jpg
+
+# Ferramenta de geração — não é conteúdo do site.
+scripts/
